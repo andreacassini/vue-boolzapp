@@ -4,6 +4,57 @@
     box-sizing: border-box;
 }
 
-.col{
-    border: 1px solid black;
+body{
+    font-family: 'Roboto', sans-serif;
 }
+.back{
+    background: linear-gradient(180deg, #009688 15%, #D9DBD4 15%);
+}
+.col{
+
+}
+
+.background-img{
+    background-image: url("../img/mine.jpg");
+    height: 70vh;
+}
+
+.main-bg{
+    background-color: #E9E9E9;
+    border-right: 2px solid rgba(206, 206, 206, 0.514);
+}
+
+img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.desktop-not{
+    background-color: #98D7FB;
+    line-height: 0.3;
+}
+
+.frame{
+    border-radius: 50%;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+}
+
+
+.search-bar{
+    height: 25px;
+    font-size: 14px;
+    border-radius: 0;
+    border-color: rgba(221, 221, 221, 0.301);
+    background-color: white;
+}
+
+.name{
+    font-weight: 500;
+}
+.access, a{
+    font-size: 13px;
+    color: rgb(116, 116, 116);
+}
+
