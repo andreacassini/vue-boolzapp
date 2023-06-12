@@ -7,16 +7,13 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-.back{
+#app{
     background: linear-gradient(180deg, #009688 15%, #D9DBD4 15%);
-}
-.col{
-
+    height: 100vh;
 }
 
 .background-img{
     background-image: url("../img/mine.jpg");
-    height: 70vh;
 }
 
 .main-bg{
@@ -41,7 +38,6 @@ img{
     height: 40px;
 }
 
-
 .search-bar{
     height: 25px;
     font-size: 14px;
@@ -58,3 +54,20 @@ img{
     color: rgb(116, 116, 116);
 }
 
+.img-list{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.access-list{
+    font-size: 13px;
+    color: rgba(116, 116, 116, 0.651);
+}
+
+.application-size{
+    height: 100vh;
+}
+
+.left-col{
+    background-color: white;
+}
