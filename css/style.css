@@ -6,17 +6,21 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-}
-#app{
     background: linear-gradient(180deg, #009688 15%, #D9DBD4 15%);
-    height: 100%;
 }
 
 .application-size{
     height: 100vh;
 }
+
+.main-row{
+    height: 100%;
+}
+
 .background-img{
     background-image: url("../img/mine.jpg");
+    overflow-y: auto;
+    height: calc(100% - 144px);
 }
 
 .main-bg{
@@ -83,6 +87,7 @@ img{
     line-height: 1.4;
 }
 
-.prova{
-    height: 100%;
+.chat-list{
+    overflow-y: auto;
+    height: calc(100% - 226px);
 }
