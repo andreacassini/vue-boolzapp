@@ -56,110 +56,12 @@
                     <div class="row bg-white chat-list">
                         <div class="col-12">
                             <!-- MICHELE -->
-                            <div class="user" v-for="(user, index) in contacts">
+                            <div class="row justify-content-center py-1 hover-effect" v-for="(user, index) in contacts">
                                 <div class="col-1 pe-5 p-2">
-                                    <img :src="contacts[index].avatar" alt="contacts[index].name">
+                                    <img :src="contacts[index].avatar" alt="contacts[index].name" class="img-list">
                                 </div>
                                 <div class="col-8 py-2 ms-3 line-height">
-                                    <span class="name" v-for="(name, index) in contacts"></span>
-                                    <br>
-                                    <span class="access-list">Ultimo messaggio inviato</span> 
-                                </div>
-                                <div class="col text-end">
-                                    <span class="access-list">12:00</span>
-                                </div>
-                            </div>
-                            <!-- FABIO -->
-                            <div class="row justify-content-center py-1 hover-effect">
-                                <div class="col-1 pe-5 p-2">
-                                    <img src="./img/avatar_2.jpg" alt="Fabio" class="img-list">
-                                </div>
-                                <div class="col-8 py-2 ms-3 line-height">
-                                    <span class="name">Fabio</span>
-                                    <br>
-                                    <span class="access-list">Ultimo messaggio inviato</span> 
-                                </div>
-                                <div class="col text-end">
-                                    <span class="access-list">12:00</span>
-                                </div>
-                            </div>
-                            <!-- SAMUELE -->
-                            <div class="row justify-content-center py-1 hover-effect">
-                                <div class="col-1 pe-5 p-2">
-                                    <img src="./img/avatar_3.jpg" alt="Samuele" class="img-list">
-                                </div>
-                                <div class="col-8 py-2 ms-3 line-height">
-                                    <span class="name">Samuele</span>
-                                    <br>
-                                    <span class="access-list">Ultimo messaggio inviato</span> 
-                                </div>
-                                <div class="col text-end">
-                                    <span class="access-list">12:00</span>
-                                </div>
-                            </div>
-                            <!-- ALESSANDRO B. -->
-                            <div class="row justify-content-center py-1 hover-effect">
-                                <div class="col-1 pe-5 p-2">
-                                    <img src="./img/avatar_4.jpg" alt="Alessandro B." class="img-list">
-                                </div>
-                                <div class="col-8 py-2 ms-3 line-height">
-                                    <span class="name">Alessandro B.</span>
-                                    <br>
-                                    <span class="access-list">Ultimo messaggio inviato</span> 
-                                </div>
-                                <div class="col text-end">
-                                    <span class="access-list">12:00</span>
-                                </div>
-                            </div>
-                            <!-- ALESSANDRO L. -->
-                            <div class="row justify-content-center py-1 hover-effect">
-                                <div class="col-1 pe-5 p-2">
-                                    <img src="./img/avatar_5.jpg" alt="Alessandro L." class="img-list">
-                                </div>
-                                <div class="col-8 py-2 ms-3 line-height">
-                                    <span class="name">Alessandro L.</span>
-                                    <br>
-                                    <span class="access-list">Ultimo messaggio inviato</span> 
-                                </div>
-                                <div class="col text-end">
-                                    <span class="access-list">12:00</span>
-                                </div>
-                            </div>
-                            <!-- CLAUDIA -->
-                            <div class="row justify-content-center py-1 hover-effect">
-                                <div class="col-1 pe-5 p-2">
-                                    <img src="./img/avatar_6.jpg" alt="Claudia" class="img-list">
-                                </div>
-                                <div class="col-8 py-2 ms-3 line-height">
-                                    <span class="name">Claudia</span>
-                                    <br>
-                                    <span class="access-list">Ultimo messaggio inviato</span> 
-                                </div>
-                                <div class="col text-end">
-                                    <span class="access-list">12:00</span>
-                                </div>
-                            </div>
-                            <!-- FEDERICO -->
-                            <div class="row justify-content-center py-1 hover-effect">
-                                <div class="col-1 pe-5 p-2">
-                                    <img src="./img/avatar_7.jpg" alt="Federico" class="img-list">
-                                </div>
-                                <div class="col-8 py-2 ms-3 line-height">
-                                    <span class="name">Federico</span>
-                                    <br>
-                                    <span class="access-list">Ultimo messaggio inviato</span> 
-                                </div>
-                                <div class="col text-end">
-                                    <span class="access-list">12:00</span>
-                                </div>
-                            </div>
-                            <!-- DAVIDE -->
-                            <div class="row justify-content-center py-1 hover-effect">
-                                <div class="col-1 pe-5 p-2">
-                                    <img src="./img/avatar_8.jpg" alt="Davide" class="img-list">
-                                </div>
-                                <div class="col-8 py-2 ms-3 line-height">
-                                    <span class="name">Davide</span>
+                                    <span class="name">{{contacts[index].name}}</span>
                                     <br>
                                     <span class="access-list">Ultimo messaggio inviato</span> 
                                 </div>
