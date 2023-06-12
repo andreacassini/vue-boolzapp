@@ -13,14 +13,19 @@ body{
     height: 100vh;
 }
 
+.max-width{
+    max-width: 900px;
+    height: 100%;
+    margin: 0 auto;
+}
 .main-row{
     height: 100%;
 }
 
 .background-img{
     background-image: url("../img/mine.jpg");
-    overflow-y: auto;
-    height: calc(100% - 144px);
+    overflow-y: scroll;
+    height: calc(100% - 118px);
 }
 
 .main-bg{
@@ -88,6 +93,24 @@ img{
 }
 
 .chat-list{
-    overflow-y: auto;
-    height: calc(100% - 226px);
+    overflow-y: scroll;
+    height: calc(100% - 200px);
+}
+
+/* CHAT */
+
+.sent{
+    float: right;
+    background-color: #DAF7BA;
+}
+
+.received{
+    float: left;
+    background-color: white;
+}
+.sent, .received{
+    padding: 15px 100px 15px 15px;
+    margin: 5px 10px;
+    border-radius: 10px;
+    font-weight: 500;
 }
