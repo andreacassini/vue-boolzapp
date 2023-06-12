@@ -14,6 +14,7 @@ body{
 
 .background-img{
     background-image: url("../img/mine.jpg");
+    height: 80vh;
 }
 
 .main-bg{
@@ -64,10 +65,14 @@ img{
     color: rgba(116, 116, 116, 0.651);
 }
 
-.application-size{
-    height: 100vh;
+.type-box{
+    width: 100%;
+    border-radius: 4px;
+    border: 0;
+    font-size: 15px;
 }
 
-.left-col{
+.chat-list{
     background-color: white;
+    height: 76vh;
 }
