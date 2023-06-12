@@ -9,12 +9,14 @@ body{
 }
 #app{
     background: linear-gradient(180deg, #009688 15%, #D9DBD4 15%);
-    height: 100vh;
+    height: 100%;
 }
 
+.application-size{
+    height: 100vh;
+}
 .background-img{
     background-image: url("../img/mine.jpg");
-    height: 80vh;
 }
 
 .main-bg{
@@ -23,7 +25,7 @@ body{
 }
 
 img{
-    width: 40px;
+    width: 50px;
     border-radius: 50%;
 }
 
@@ -35,12 +37,12 @@ img{
 .frame{
     border-radius: 50%;
     background-color: white;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 .search-bar{
-    height: 25px;
+    height: 40px;
     font-size: 14px;
     border-radius: 0;
     border-color: rgba(221, 221, 221, 0.301);
@@ -49,19 +51,20 @@ img{
 
 .name{
     font-weight: 500;
+    font-size: 17px;
 }
 .access, a{
-    font-size: 13px;
+    font-size: 14px;
     color: rgb(116, 116, 116);
 }
 
 .img-list{
-    width: 50px;
+    width: 60px;
     border-radius: 50%;
 }
 
 .access-list{
-    font-size: 13px;
+    font-size: 15px;
     color: rgba(116, 116, 116, 0.651);
 }
 
@@ -69,10 +72,17 @@ img{
     width: 100%;
     border-radius: 4px;
     border: 0;
-    font-size: 15px;
+    font-size: 16px;
 }
 
-.chat-list{
-    background-color: white;
-    height: 76vh;
+.hover-effect:hover{
+    background-color: rgba(128, 128, 128, 0.329);
+}
+
+.line-height{
+    line-height: 1.4;
+}
+
+.prova{
+    height: 100%;
 }
