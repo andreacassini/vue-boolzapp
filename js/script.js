@@ -170,6 +170,9 @@ createApp ({
         } 
     },
     methods: {
-            
+            userSelected(){
+                
+                console.log(`Hai cliccato qui`)
+            }
         }
 }).mount('#app')
