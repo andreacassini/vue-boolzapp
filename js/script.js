@@ -170,9 +170,9 @@ createApp ({
         } 
     },
     methods: {
-            userSelected(){
-                
-                console.log(`Hai cliccato qui`)
-            }
-        }
+        userSelected(index) {
+          const selectedUser = this.contacts[index];
+          console.log(`Hai cliccato su ${selectedUser.name}`);
+        },
+      }      
 }).mount('#app')
