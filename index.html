@@ -103,7 +103,7 @@
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col-12" v-for="(user,index) in contacts[activeContact].messages">
-                                            <div class="sent" :class="contacts[activeContact].messages[index].status ==='received' ? 'received' : 'sent'">
+                                            <div class="sent" :class="contacts[activeContact].messages[index].status ==='sent' ? 'sent' : 'received'">
                                                 {{contacts[activeContact].messages[index].message}}
                                             </div>
                                         </div>

@@ -187,6 +187,15 @@ createApp ({
             }
             this.contacts[this.activeContact].messages.push(obj);
             this.newMessage = '';
+
+            setTimeout(()=>{
+                let obj = {
+                    message: 'ok',
+                    status: 'received',
+                }
+                this.contacts[this.activeContact].messages.push(obj);
+        
+            },1000);
         }
     }      
 }).mount('#app')
