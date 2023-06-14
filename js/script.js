@@ -165,14 +165,18 @@ createApp ({
                         }
                     ],
                 }
-            ]
+            ],
+
+            activeContact: 0,
+
+
             
-        } 
+        }
     },
     methods: {
-        userSelected(index) {
-          const selectedUser = this.contacts[index];
-          console.log(`Hai cliccato su ${selectedUser.name}`);
+        //CONTATTO ATTIVO
+        activeUser(index) {
+            this.activeContact = index
         },
       }      
 }).mount('#app')

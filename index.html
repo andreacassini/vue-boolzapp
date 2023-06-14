@@ -56,12 +56,12 @@
                     <div class="row bg-white chat-list">
                         <div class="col-12">
                             <!-- MICHELE -->
-                            <div class="row justify-content-center py-1 hover-effect" v-for="(user, index) in contacts" @click="userSelected(index)" >
+                            <div class="row justify-content-center py-1 hover-effect" v-for="(user, index) in contacts" @click="activeUser(index)" >
                                 <div class="col-1 pe-5 p-2">
-                                    <img :src="contacts[index].avatar" alt="contacts[index].name" class="img-list">
+                                    <img :src="user.avatar" alt="contacts[index].name" class="img-list">
                                 </div>
                                 <div class="col-8 py-2 ms-3 line-height">
-                                    <span class="name">{{contacts[index].name}}</span>
+                                    <span class="name">{{user.name}}</span>
                                     <br>
                                     <span class="access-list">Ultimo messaggio inviato</span> 
                                 </div>
@@ -102,9 +102,12 @@
                             <div class="max-width">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-12" >
-                                            <div class="sent">{{message}}</div>
-                                        </div>
+                                        <div class="col-12" v-for="(user,index) in contacts[activeContact].messages">
+                                            <div class="sent" :class="contacts[activeContact].messages[index].status ==='received' ? 'received' : 'sent'">
+                                                {{contacts[activeContact].messages[index].message}}
+                                            </div>
+                                          </div>
+                                          
                                     </div>
                                 </div>
                             </div>
