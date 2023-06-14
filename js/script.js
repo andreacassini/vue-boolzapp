@@ -168,15 +168,25 @@ createApp ({
             ],
 
             activeContact: 0,
-
+            newMessage: '',
 
             
         }
     },
     methods: {
-        //CONTATTO ATTIVO
+        //FUNZIONE PER SCEGLIERE IL CONTATTO CHE SI VUOLE MOSTRARE
         activeUser(index) {
             this.activeContact = index
         },
-      }      
+
+        //FUNZIONE PER AGGIUNGERE MESSAGGIO
+        addMessage(){
+            let obj = {
+                message: this.newMessage,
+                status: 'sent'
+            }
+            this.contacts[this.activeContact].messages.push(obj);
+            this.newMessage = '';
+        }
+    }      
 }).mount('#app')

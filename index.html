@@ -118,7 +118,7 @@
                             <a href="" class="hover-effect py-2 px-4"><i class="fa-regular fa-face-smile fa-lg" style="color: #6a6f71d7;"></i></a>
                         </div>
                         <div class="col-10">
-                            <input type="text" class="type-box p-2" placeholder="Scrivi un messaggio">
+                            <input type="text" class="type-box p-2" placeholder="Scrivi un messaggio" v-model="newMessage" @keyup.enter="addMessage">
                         </div>
                         <div class="col-1 text-center">
                             <a href="" class="hover-effect py-2 px-4"><i class="fa-solid fa-microphone fa-lg" style="color: #6a6f71d7;"></i></a>
