@@ -199,11 +199,15 @@ createApp ({
 
         //FUNZIONE PER FILTRARE RICERCA UTENTI
         searchContact(){
-            let contactSearched = this.userSearch.toLowerCase();
-            this.contacts.forEach((user) => {
-                let contactName = user.name.toLowerCase();
-                user.visible = contactName.includes(contactSearched);
-            });
+            for(let i = 0; i <this.contacts.length; i++ ) {
+                let user = this.contacts[i];
+                if(user.name.toLowerCase().includes(this.userSearch.toLowerCase())){
+                    user.visible=true;
+                }
+                else{
+                    user.visible=false;
+                }
+            }
         }
     }      
 }).mount('#app')
