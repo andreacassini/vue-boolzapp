@@ -169,8 +169,7 @@ createApp ({
 
             activeContact: 0,
             newMessage: '',
-
-            
+            userSearch: '',
         }
     },
     methods: {
@@ -196,6 +195,15 @@ createApp ({
                 this.contacts[this.activeContact].messages.push(obj);
         
             },1000);
+        },
+
+        //FUNZIONE PER FILTRARE RICERCA UTENTI
+        searchContact(){
+            let contactSearched = this.userSearch.toLowerCase();
+            this.contacts.forEach((user) => {
+                let contactName = user.name.toLowerCase();
+                user.visible = contactName.includes(contactSearched);
+            });
         }
     }      
 }).mount('#app')
